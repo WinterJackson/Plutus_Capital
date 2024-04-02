@@ -1,0 +1,13 @@
+summary: "Delete a question by ID"
+description: "Delete a question and its associated choices by its ID."
+parameters:
+  - name: question_id
+    in: path
+    required: true
+    type: integer
+    description: "ID of the question to delete"
+responses:
+  204:
+    description: "Question deleted successfully"
+  404:
+    description: "Question not found"

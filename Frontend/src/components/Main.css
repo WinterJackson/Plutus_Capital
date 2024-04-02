@@ -1,0 +1,110 @@
+.main_bod{
+    width: 98vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_left{
+    display: none;
+    background-color: blue;
+    height: 95%;
+    width: 30%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.main_right{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    height: 95%;
+    width: 75%;
+    animation: easeTop 2s ease 0s 1 normal forwards;
+}
+.NextButton{
+    position: absolute;
+    display: block;
+    right: 20px;
+    bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: blue;
+}
+.typing-text {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 8px; /* Remove the border and cursor effect */
+    animation: typing 3s steps(24, end);
+}
+.choice-text{
+    animation: choiceSlide 2s ease 0s 1 normal forwards;
+}
+.backBtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.right_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.qstnCnt{
+    width: 100%;
+    word-wrap: break-word;
+}
+
+
+@keyframes choiceSlide {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+}
+@keyframes easeTop {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

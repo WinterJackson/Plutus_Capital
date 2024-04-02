@@ -1,0 +1,162 @@
+.authscreenMain{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative;
+    background-color: transparent;
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.6), rgb(254,239,232)), url('../assets/coins-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem;
+}
+
+.authLeft{
+    flex: 1 1 70%;
+    min-height: 30rem;
+    background-color: #FFF8F0;
+    animation: topAnim 2s ease 0s 1 normal forwards;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.6), rgb(254,239,232)), url('https://referral-factory.com/storage/images/DEmt1H8U3uNd52F7.gif');
+    background-color: #4a35217d;
+}
+
+.authRight{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    flex: 1 1 30%;
+    animation: bottomAnim 2s ease 0s 1 alternate forwards;
+    background-color: #4a3521;
+    color: #ffb772cc;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.mainContent{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.companySummary{
+    padding: 2rem;
+}
+
+.btnsCont {
+    padding: 2rem;
+    color: #4a3521;
+}
+
+.companyName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: clamp(15rem, 2vw, 25rem);
+    color: #4a3521;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.nameTop{
+    font-size: clamp(1.5rem, 3vw, 3.5rem);
+    font-weight: bold;
+    animation: slideAnim 2s ease 0s 1 normal forwards;
+}
+
+.nameBottom{
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    animation: slideAnim 2s ease 0s 1 normal forwards;
+}
+
+.closeBtn{
+    position: absolute;
+    background-color: bisque;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.getStarted{
+    background-color: #ffb772cc;
+    padding: 5px 10px;
+}
+
+.modalFalse {
+    display: false;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (max-width: 912px) {
+    .authRight {
+        flex: 1 1 100%;
+        border-radius: 0 0rem 1rem 1rem;
+    }
+
+    .authLeft {
+        flex: 1 1 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .companyName{
+        margin-top: 5rem;
+        margin-left: clamp(5rem, 2vw, 20rem);
+    }
+
+    .authscreenMain{
+        min-height: 100vh;
+    }
+}
+
+@keyframes topAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes bottomAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

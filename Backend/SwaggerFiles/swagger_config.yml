@@ -1,0 +1,15 @@
+summary: "Get all questions"
+description: "Retrieve all questions"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+responses:
+  200:
+    description: "Successful request"
+  404:
+    description: "Questions not found"
+
+
+
+

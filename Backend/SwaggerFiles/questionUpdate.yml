@@ -1,0 +1,22 @@
+summary: "Update a question by ID"
+description: "Update the content of a question by its ID."
+parameters:
+  - name: question_id
+    in: path
+    required: true
+    type: integer
+    description: "ID of the question to update"
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        question:
+          type: string
+          example: "New question content"
+responses:
+  200:
+    description: "Question updated successfully"
+  404:
+    description: "Question not found"

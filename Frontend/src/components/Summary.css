@@ -1,0 +1,48 @@
+.summary_main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: beige;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.breakdownCont {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-left: 20px;
+    width: 100%;
+}
+.breakdownKey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 4px solid blue;
+    border-radius: 10px;
+    background-color: aquamarine;
+    width: 40%;
+}
+.breakdownKey span{
+    color: grey;
+    margin: 0 5px;
+}
+.breakdownKey p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.summaryText {
+    margin-left: 20px;
+}
