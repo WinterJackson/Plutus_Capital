@@ -47,6 +47,14 @@ Once downloaded, extract it anywhere convenient on your computer. Open up VS cod
 
 If everything goes well, after running 'npm start', the app should be launched in your browser window automatically. If any error occurs during installation process please refer to official React documentation available online.
 
+## Screenshots
+
+<div style="display: grid; justify-content: center;">
+    <img src="./Frontend/src/assets/plutus.png" alt="Screenshot 1" style="width: 100%;">
+    <img src="./Frontend/src/assets/plutus1.png" alt="Screenshot 2" style="width: 100%;">
+    <img src="./Frontend/src/assets/plutus2.png" alt="Screenshot 2" style="width: 100%;">
+</div>
+
 
 ## API Documentation
 
